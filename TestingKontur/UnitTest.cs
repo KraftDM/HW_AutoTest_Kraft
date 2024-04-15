@@ -1,4 +1,6 @@
 using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace TestingKontur
 {
@@ -10,8 +12,12 @@ namespace TestingKontur
         }
 
         [Test]
-        public void Test1()
+        public void Autorization()
         {
+            var driver = new ChromeDriver();
+
+            driver.Navigate().GoToUrl("https://staff-testing.testkontur.ru/Account/Login");
+
             Assert.Pass();
         }
     }
