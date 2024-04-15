@@ -101,3 +101,6 @@ E:\VSC\TestingKontur\TestingKontur\obj\Debug\net6.0\refint\TestingKontur.dll
 E:\VSC\TestingKontur\TestingKontur\obj\Debug\net6.0\TestingKontur.pdb
 E:\VSC\TestingKontur\TestingKontur\obj\Debug\net6.0\TestingKontur.genruntimeconfig.cache
 E:\VSC\TestingKontur\TestingKontur\obj\Debug\net6.0\ref\TestingKontur.dll
+E:\VSC\TestingKontur\TestingKontur\bin\Debug\net6.0\SeleniumExtras.WaitHelpers.dll
+E:\VSC\TestingKontur\TestingKontur\bin\Debug\net6.0\Telerik.NetworkConnections.dll
+E:\VSC\TestingKontur\TestingKontur\bin\Debug\net6.0\System.ComponentModel.Composition.dll

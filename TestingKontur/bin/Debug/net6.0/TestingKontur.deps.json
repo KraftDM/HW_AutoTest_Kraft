@@ -8,10 +8,12 @@
     ".NETCoreApp,Version=v6.0": {
       "TestingKontur/1.0.0": {
         "dependencies": {
+          "FiddlerCore5.NetworkConnections": "0.2.0",
           "Microsoft.NET.Test.Sdk": "16.11.0",
           "NUnit": "3.13.2",
           "NUnit3TestAdapter": "4.0.0",
           "Selenium.WebDriver": "4.19.0",
+          "SeleniumExtras.WaitHelpers": "1.0.2",
           "coverlet.collector": "3.1.0"
         },
         "runtime": {
@@ -19,6 +21,18 @@
         }
       },
       "coverlet.collector/3.1.0": {},
+      "FiddlerCore5.NetworkConnections/0.2.0": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.5.0",
+          "System.ComponentModel.Composition": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Telerik.NetworkConnections.dll": {
+            "assemblyVersion": "0.2.0.0",
+            "fileVersion": "0.2.0.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/16.11.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -33,7 +47,7 @@
           "Microsoft.TestPlatform.TestHost": "16.11.0"
         }
       },
-      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Platforms/2.0.0": {},
       "Microsoft.TestPlatform.ObjectModel/16.11.0": {
         "dependencies": {
           "NuGet.Frameworks": "5.0.0",
@@ -281,9 +295,15 @@
           }
         }
       },
+      "Microsoft.Win32.Registry/4.5.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.5.0",
+          "System.Security.Principal.Windows": "4.5.0"
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0"
+          "Microsoft.NETCore.Platforms": "2.0.0"
         }
       },
       "Newtonsoft.Json/13.0.1": {
@@ -325,7 +345,37 @@
           }
         }
       },
-      "System.Reflection.Metadata/1.6.0": {}
+      "SeleniumExtras.WaitHelpers/1.0.2": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.19.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "System.ComponentModel.Composition/4.6.0": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.ComponentModel.Composition.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.700.19.46214"
+          }
+        }
+      },
+      "System.Reflection.Metadata/1.6.0": {},
+      "System.Security.AccessControl/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "System.Security.Principal.Windows": "4.5.0"
+        }
+      },
+      "System.Security.Principal.Windows/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
+        }
+      }
     }
   },
   "libraries": {
@@ -341,6 +391,13 @@
       "path": "coverlet.collector/3.1.0",
       "hashPath": "coverlet.collector.3.1.0.nupkg.sha512"
     },
+    "FiddlerCore5.NetworkConnections/0.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NLAxgCfpQJKE4RqmuFJMFLSEobABbkYJBCI6iI9c7I+v+BAF3lXOyoilaJx9jyZrTAHK0e6M/aHmrMGm0x+6gw==",
+      "path": "fiddlercore5.networkconnections/0.2.0",
+      "hashPath": "fiddlercore5.networkconnections.0.2.0.nupkg.sha512"
+    },
     "Microsoft.CodeCoverage/16.11.0": {
       "type": "package",
       "serviceable": true,
@@ -355,12 +412,12 @@
       "path": "microsoft.net.test.sdk/16.11.0",
       "hashPath": "microsoft.net.test.sdk.16.11.0.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/1.1.0": {
+    "Microsoft.NETCore.Platforms/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
-      "path": "microsoft.netcore.platforms/1.1.0",
-      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+      "sha512": "sha512-VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "hashPath": "microsoft.netcore.platforms.2.0.0.nupkg.sha512"
     },
     "Microsoft.TestPlatform.ObjectModel/16.11.0": {
       "type": "package",
@@ -375,6 +432,13 @@
       "sha512": "sha512-/Q+R0EcCJE8JaYCk+bGReicw/xrB0HhecrYrUcLbn95BnAlaTJrZhoLkUhvtKTAVtqX/AIKWXYtutiU/Q6QUgg==",
       "path": "microsoft.testplatform.testhost/16.11.0",
       "hashPath": "microsoft.testplatform.testhost.16.11.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.Registry/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
+      "path": "microsoft.win32.registry/4.5.0",
+      "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
     },
     "NETStandard.Library/2.0.0": {
       "type": "package",
@@ -418,12 +482,40 @@
       "path": "selenium.webdriver/4.19.0",
       "hashPath": "selenium.webdriver.4.19.0.nupkg.sha512"
     },
+    "SeleniumExtras.WaitHelpers/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-de7m30nkZZLkfCncYBdluUpM27AR/Vkk4kiA4HRQbV+fZI3ps4qGIeJCuj8TAMXdMfQik5Rno8xPnFBIod+ebg==",
+      "path": "seleniumextras.waithelpers/1.0.2",
+      "hashPath": "seleniumextras.waithelpers.1.0.2.nupkg.sha512"
+    },
+    "System.ComponentModel.Composition/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xrLifQcKzXNinIunzLhgA4T0s0ZjkDdMq93mV8HkrfR6j0E7XVO3nIXorqkcqhdZI8HCQWUo00EHLQcegu9VIg==",
+      "path": "system.componentmodel.composition/4.6.0",
+      "hashPath": "system.componentmodel.composition.4.6.0.nupkg.sha512"
+    },
     "System.Reflection.Metadata/1.6.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
+    },
+    "System.Security.AccessControl/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vW8Eoq0TMyz5vAG/6ce483x/CP83fgm4SJe5P8Tb1tZaobcvPrbMEL7rhH1DRdrYbbb6F0vq3OlzmK0Pkwks5A==",
+      "path": "system.security.accesscontrol/4.5.0",
+      "hashPath": "system.security.accesscontrol.4.5.0.nupkg.sha512"
+    },
+    "System.Security.Principal.Windows/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U77HfRXlZlOeIXd//Yoj6Jnk8AXlbeisf1oq1os+hxOGVnuG+lGSfGqTwTZBoORFF6j/0q7HXIl8cqwQ9aUGqQ==",
+      "path": "system.security.principal.windows/4.5.0",
+      "hashPath": "system.security.principal.windows.4.5.0.nupkg.sha512"
     }
   }
 }
