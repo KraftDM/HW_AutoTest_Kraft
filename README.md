@@ -5,8 +5,8 @@ IDE VisualStudio 2022
 В Setup используются мои Cookie для авторизации.
 
 За неимением доступа к БД, в паре методов вызываются JS скрипты с API запросами
-* CopyFile.js - очищает папку My/Отсюда
-* ClearFolder.js - копирует файл avatar.gif из My/Setup в My/Отсюда
+* ClearFolder.js - очищает папку My/Отсюда
+* CopyFile.js - копирует файл avatar.gif из My/Setup в My/Отсюда 
 * ChangeDescription.js - изменяет описание сообщества HW_TestAPI на SETUP
 
 ## Тесты
