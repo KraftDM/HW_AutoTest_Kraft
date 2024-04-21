@@ -111,7 +111,7 @@ namespace TestingKontur
             buttons[1].Click(); // 0 - отменить,  1 - сохранить
 
             description = driver.FindElement(By.CssSelector("[data-tid='Description']")).FindElement(By.TagName("div"));
-            Assert.That(description.Text == text, "currentText = " + description.Text + " а должен быть ILOVECATS");
+            Assert.That(description.Text == text, "currentText = " + description.Text + " а должен быть " + text);
         }
 
         [Test]
@@ -134,7 +134,7 @@ namespace TestingKontur
 
             try 
             {
-                // тут такое явное ожидание, потому что новое сообщество подгуражется и в DOM появляется не сразу
+                // тут такое явное ожидание, потому что новое обсуждение подгуражется и в DOM появляется не сразу
                 new WebDriverWait(driver, TimeSpan.FromSeconds(1)).Until(d => d.FindElements(By.CssSelector("[data-tid='DiscussionItem']")).Count == disOldCount + 1);
             } catch {
                 Assert.Fail("Новое обсуждение не появилось на экране или не создалось");
